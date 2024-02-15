@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"  crossorigin="anonymous" />
+    <style>
+      input:focus{
+        border: none !important;
+        box-shadow: none !important;
+      }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container-fluid" >
+        <div class="card " id="card">
+            <div class="container">
+              <div class="cloud front">
+                <span class="left-front"></span>
+                <span class="right-front"></span>
+              </div>
+              <span class="sun sunshine"></span>
+              <span class="sun"></span>
+              <div class="cloud back">
+                <span class="left-back"></span>
+                <span class="right-back"></span>
+              </div>
+            </div>
+          
+            <div class="card-header">
+              <h2 id="cityName"></span>
+              </div>
+              <span id="date"></span>
+            <div class="inp">
+              <input type="text" name="text" id="text" placeholder="enter the city name" style="border: none !important;">
+              <label for="text">
+                <button onclick="check()">
+                  <i class="fa-solid fa-magnifying-glass-location" style="color: #1c71d8 ; font-size: 20px;"></i>
+                </button>
+              </label>
+            </div>
+
+
+
+
+            <div class="card2" style="display: none;" id="card2">
+           
+              <div class="wrapper">
+            
+                <div class="color eerie-black">
+                  Humidity
+                  <span class="hex" id="Humidity">...</span>
+                </div>
+               
+                 <div class="color night-rider">
+                  Pressure
+                  <span class="hex" id="pressure">...</span>
+                </div>
+               
+                <div class="color anti-flash-white">
+                  Speed
+                  <span class="hex" id="speed">...</span>
+                </div>
+                <div class="color white">
+                  deg
+                  <span class="hex" id="last" style="text-decoration: none !important;" >...</span>
+               
+            </div>
+          </div>
+        </div>
+            <span class="temp" id="temp">...</span>
+          <div class="">
+            <h4 id="deg" style="color: blue;">...</span>
+          </div>
+    </center>
+</body>
+<script src="script.js"></script>
+</html>
